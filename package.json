@@ -4,8 +4,10 @@
   "description": "**React Advanced skill**",
   "main": "index.js",
   "scripts": {
+    "vercel-build": "npm run build",
     "build": "webpack",
     "lint": "standard",
+    "lint-fix": "standard --fix",
     "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,7 +35,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "style-components": "^0.1.0"
   },
   "standard": {
     "ignore": [
@@ -41,6 +44,8 @@
     ]
   },
   "eslintConfig": {
-    "extends":["./node_modules/standard/eslintrc.json"]
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   }
 }
